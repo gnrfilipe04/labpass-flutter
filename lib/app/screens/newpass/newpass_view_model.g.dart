@@ -9,6 +9,22 @@ part of 'newpass_view_model.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$NewPassViewModel on _NewPassViewModelBase, Store {
+  late final _$_passRepositoryAtom =
+      Atom(name: '_NewPassViewModelBase._passRepository', context: context);
+
+  @override
+  PassRepository get _passRepository {
+    _$_passRepositoryAtom.reportRead();
+    return super._passRepository;
+  }
+
+  @override
+  set _passRepository(PassRepository value) {
+    _$_passRepositoryAtom.reportWrite(value, super._passRepository, () {
+      super._passRepository = value;
+    });
+  }
+
   late final _$listOfPassAtom =
       Atom(name: '_NewPassViewModelBase.listOfPass', context: context);
 

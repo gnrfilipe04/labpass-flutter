@@ -1,9 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:labpass/app/screens/login/login_view.dart';
-import 'package:labpass/app/screens/newpass/newpass_view.dart';
+import 'package:labpass/app/provider.dart';
+import 'package:labpass/app/router.dart' as router;
+import 'package:labpass/app/services/NavigationService.dart';
 import 'package:labpass/app/theme/custom_theme.dart';
 import 'package:labpass/firebase_options.dart';
+import 'package:labpass/app/constants/route_paths.dart' as routes;
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -24,7 +26,9 @@ class MyApp extends StatelessWidget {
       title: 'labpass',
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.darkTheme,
-      home: const NewPass(),
+      onGenerateRoute: router.generateRoute,
+      initialRoute: routes.LoginRoute,
+      navigatorKey: provider<NavigationService>().navigatorKey,
     );
   }
 }

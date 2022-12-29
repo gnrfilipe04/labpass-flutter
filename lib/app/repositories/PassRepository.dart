@@ -15,7 +15,7 @@ class Pass {
 class PassRepository {
   List<Pass> passwords = [];
 
-  initializePassList({required List<Pass> initPasswordsList}) {
+  setPassList({required List<Pass> initPasswordsList}) {
     this.passwords = initPasswordsList;
   }
 

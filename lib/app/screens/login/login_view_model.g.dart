@@ -41,6 +41,20 @@ mixin _$LoginViewModel on _LoginViewModelBase, Store {
     return _$onLogoutAsyncAction.run(() => super.onLogout());
   }
 
+  late final _$_LoginViewModelBaseActionController =
+      ActionController(name: '_LoginViewModelBase', context: context);
+
+  @override
+  dynamic onLoginFacebook() {
+    final _$actionInfo = _$_LoginViewModelBaseActionController.startAction(
+        name: '_LoginViewModelBase.onLoginFacebook');
+    try {
+      return super.onLoginFacebook();
+    } finally {
+      _$_LoginViewModelBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
   @override
   String toString() {
     return '''

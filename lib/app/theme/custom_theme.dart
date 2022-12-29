@@ -10,8 +10,8 @@ class CustomTheme with ChangeNotifier {
       backgroundColor: CustomColors.secondary900,
       splashColor: CustomColors.primary300,
       scaffoldBackgroundColor: CustomColors.secondary900,
-      fontFamily: GoogleFonts.poppins().fontFamily,
-      textTheme: GoogleFonts.poppinsTextTheme(),
+      fontFamily: GoogleFonts.inter().fontFamily,
+      textTheme: GoogleFonts.interTextTheme(),
       buttonTheme: ButtonThemeData(
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),

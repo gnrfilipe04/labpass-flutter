@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "64198250262",
+    "project_id": "labpass-flutter",
+    "storage_bucket": "labpass-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64198250262:android:210fac4890adedca42ca37",
+        "android_client_info": {
+          "package_name": "com.lab2dev.labpass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64198250262-1lu7tt14p709obv1kleb0b6o6c1ljclk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab2dev.labpass",
+            "certificate_hash": "24527e3c845e86def179eea956c8194c27f1ff52"
+          }
+        },
+        {
+          "client_id": "64198250262-vbpnfo4tgq7d2fam1cbij7k5ra62mr43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab2dev.labpass",
+            "certificate_hash": "63927f3fe89a7bc991f562a1bff3b21a1664d8e3"
+          }
+        },
+        {
+          "client_id": "64198250262-spul4heiq9m0967643blbiav238o6nkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbC6U_krgSNX1Z1CR75YF27_OIj6hCfzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64198250262-spul4heiq9m0967643blbiav238o6nkm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "64198250262-9ns6h3he6ch9k37f4rbs9so7kb343e1j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.labpass"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

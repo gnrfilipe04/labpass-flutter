@@ -19,7 +19,7 @@ abstract class _NewPassViewModelBase with Store {
 
   @action
   addPass({required Pass pass}) {
-    _passRepository.passwords.add(pass);
+    _passRepository.addPassword(pass: pass);
 
     listOfPass = _passRepository.passwords;
   }

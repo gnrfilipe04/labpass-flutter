@@ -15,6 +15,9 @@ abstract class _LoginViewModelBase with Store {
   @observable
   MyUser? user = null;
 
+  @computed
+  bool get isLogged => user != null;
+
   toHome() {
     return _navigationService.navigateTo(routeName: 'Home');
   }
@@ -34,8 +37,6 @@ abstract class _LoginViewModelBase with Store {
         name: userGoogle.displayName as String,
         email: userGoogle.email as String,
         photo: userGoogle.photoURL as String);
-
-    toHome();
 
     return user;
   }
